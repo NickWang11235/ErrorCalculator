@@ -19,6 +19,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     private ArrayList<NumWithError> numWithErrors = new ArrayList<>();
     private NumWithError ans, tempAns;
     private Method op = null;
+    private boolean radians = true;
     
     /**
      * Creates new form ERROR
@@ -63,6 +64,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         FUNCTION_PLUSMINUS = new javax.swing.JButton();
         FUNCTION_BACKSPACE = new javax.swing.JButton();
         LABEL_TEXT = new javax.swing.JLabel();
+        RADDEG = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -254,6 +256,13 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         LABEL_TEXT.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         LABEL_TEXT.setText("0");
 
+        RADDEG.setText("Rad");
+        RADDEG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RADDEGActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -262,7 +271,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(NUMBER_ZERO, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -287,16 +296,6 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                                 .addComponent(NUMBER_SIX)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(OPERATION_SUBTRACT, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(OPERATION_LOG10, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_POWER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(OPERATION_SINE, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_COSINE, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_TANGENT, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(FUNCTION_PLUSMINUS)
@@ -313,13 +312,26 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(NUMBER_THREE, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(OPERATION_ADD, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 12, Short.MAX_VALUE))
+                                    .addComponent(OPERATION_ADD, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(OPERATION_LOG10, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
+                                    .addComponent(RADDEG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(OPERATION_SINE, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OPERATION_COSINE, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OPERATION_TANGENT, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(OPERATION_POWER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 23, Short.MAX_VALUE))
                     .addComponent(LABEL_TEXT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {FUNCTION_ANSWER, FUNCTION_BACKSPACE, FUNCTION_CLEAR, FUNCTION_EQUALS, FUNCTION_PLUSMINUS, NUMBER_DECIMAL, NUMBER_EIGHT, NUMBER_FIVE, NUMBER_FOUR, NUMBER_NINE, NUMBER_ONE, NUMBER_SEVEN, NUMBER_SIX, NUMBER_THREE, NUMBER_TWO, NUMBER_ZERO, OPERATION_ADD, OPERATION_COSINE, OPERATION_DIVIDE, OPERATION_LOG10, OPERATION_MULTIPLY, OPERATION_POWER, OPERATION_SINE, OPERATION_SUBTRACT, OPERATION_TANGENT});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {FUNCTION_ANSWER, FUNCTION_BACKSPACE, FUNCTION_CLEAR, FUNCTION_EQUALS, FUNCTION_PLUSMINUS, NUMBER_DECIMAL, NUMBER_EIGHT, NUMBER_FIVE, NUMBER_FOUR, NUMBER_NINE, NUMBER_ONE, NUMBER_SEVEN, NUMBER_SIX, NUMBER_THREE, NUMBER_TWO, NUMBER_ZERO, OPERATION_ADD, OPERATION_COSINE, OPERATION_DIVIDE, OPERATION_LOG10, OPERATION_MULTIPLY, OPERATION_POWER, OPERATION_SINE, OPERATION_SUBTRACT, OPERATION_TANGENT, RADDEG});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -334,7 +346,8 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(OPERATION_COSINE)
                     .addComponent(OPERATION_TANGENT)
-                    .addComponent(OPERATION_SINE))
+                    .addComponent(OPERATION_SINE)
+                    .addComponent(RADDEG))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FUNCTION_ANSWER)
@@ -371,6 +384,8 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {FUNCTION_PLUSMINUS, OPERATION_TANGENT});
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {FUNCTION_BACKSPACE, OPERATION_COSINE});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {OPERATION_LOG10, RADDEG});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -560,7 +575,14 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     }//GEN-LAST:event_OPERATION_COSINEActionPerformed
     
     private void handleCOSINE(){
+        if(!radians)
+            currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.COSINE);
+        if(!radians){
+            ans = ErrorCalculatorGUI.radToDeg(ans);
+            tempAns = ans;
+            LABEL_TEXT.setText(ans.toString());
+        }
     }
     
     private void OPERATION_SINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_SINEActionPerformed
@@ -568,17 +590,33 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     }//GEN-LAST:event_OPERATION_SINEActionPerformed
 
     private void handleSINE(){
+        if(!radians)
+            currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.SINE);
+        if(!radians){
+            ans = ErrorCalculatorGUI.radToDeg(ans);
+            tempAns = ans;
+            LABEL_TEXT.setText(ans.toString());
+        }
     }
     
     private void OPERATION_TANGENTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_TANGENTActionPerformed
+        
         handleTANGENT();
+        
     }//GEN-LAST:event_OPERATION_TANGENTActionPerformed
     
     private void handleTANGENT(){
+        if(!radians)
+            currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.TANGENT);
+        if(!radians){
+            ans = ErrorCalculatorGUI.radToDeg(ans);
+            tempAns = ans;
+            LABEL_TEXT.setText(ans.toString());
+        }
     }
-    
+       
     private void OPERATION_LOG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_LOG10ActionPerformed
         handleLOG10();
     }//GEN-LAST:event_OPERATION_LOG10ActionPerformed
@@ -749,6 +787,23 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 break;
         }
     }//GEN-LAST:event_formKeyPressed
+
+    private void RADDEGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RADDEGActionPerformed
+        radians = !radians;
+        if(radians)
+            RADDEG.setText("Rad");
+        else
+            RADDEG.setText("Deg");
+        
+    }//GEN-LAST:event_RADDEGActionPerformed
+    
+    private static String degToRad(String str){
+        return String.valueOf(Math.toDegrees(Double.valueOf(str)));
+    }
+    
+    private static NumWithError radToDeg(NumWithError num){
+        return new NumWithError(Math.toRadians(num.getNum()), Math.toRadians(num.getError()));
+    }
     
     private void handleBACKSPACE(){
         if(currentNum.length() >= 1){
@@ -821,6 +876,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     private javax.swing.JButton OPERATION_SINE;
     private javax.swing.JButton OPERATION_SUBTRACT;
     private javax.swing.JButton OPERATION_TANGENT;
+    private javax.swing.JButton RADDEG;
     // End of variables declaration//GEN-END:variables
 
 }
