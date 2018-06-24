@@ -5,6 +5,7 @@
  */
 package numwitherror;
 
+import java.awt.event.KeyEvent;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
@@ -12,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author cccc1
  */
-public class ErrorCalculatorGUI extends javax.swing.JFrame {
+public class ErrorCalculatorGUI extends javax.swing.JFrame{
     
     private String currentNum = "";
     private ArrayList<NumWithError> numWithErrors = new ArrayList<>();
@@ -24,6 +25,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
      */
     public ErrorCalculatorGUI() {
         initComponents();
+        this.setFocusable(true);
     }
 
     /**
@@ -63,6 +65,14 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
         LABEL_TEXT = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                formKeyTyped(evt);
+            }
+        });
 
         NUMBER_ONE.setText("1");
         NUMBER_ONE.addActionListener(new java.awt.event.ActionListener() {
@@ -366,194 +376,221 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void NUMBER_ONEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_ONEActionPerformed
+        handle1();
+    }//GEN-LAST:event_NUMBER_ONEActionPerformed
+    
+    private void handle1(){
         currentNum += "1";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_ONEActionPerformed
-
+    }
+    
     private void NUMBER_TWOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_TWOActionPerformed
+        handle2();
+    }//GEN-LAST:event_NUMBER_TWOActionPerformed
+    
+    private void handle2(){
         currentNum += "2";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_TWOActionPerformed
-
+    }
+    
     private void NUMBER_THREEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_THREEActionPerformed
+        handle3();
+    }//GEN-LAST:event_NUMBER_THREEActionPerformed
+    
+    private void handle3(){
         currentNum += "3";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_THREEActionPerformed
-
+    }
+    
     private void NUMBER_FOURActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_FOURActionPerformed
+        handle4();
+    }//GEN-LAST:event_NUMBER_FOURActionPerformed
+
+    private void handle4(){
         currentNum += "4";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_FOURActionPerformed
-
+    }
+    
     private void NUMBER_FIVEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_FIVEActionPerformed
+        handle5();
+    }//GEN-LAST:event_NUMBER_FIVEActionPerformed
+
+    private void handle5(){
         currentNum += "5";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_FIVEActionPerformed
-
+    }
+    
     private void NUMBER_SIXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_SIXActionPerformed
+        handle6();
+    }//GEN-LAST:event_NUMBER_SIXActionPerformed
+
+    private void handle6(){
         currentNum += "6";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_SIXActionPerformed
-
+    }
+    
     private void NUMBER_SEVENActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_SEVENActionPerformed
+        handle7();
+    }//GEN-LAST:event_NUMBER_SEVENActionPerformed
+    
+    private void handle7(){
         currentNum += "7";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_SEVENActionPerformed
-
+    }
+    
     private void NUMBER_EIGHTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_EIGHTActionPerformed
+        handle8();
+    }//GEN-LAST:event_NUMBER_EIGHTActionPerformed
+
+    private void handle8(){
         currentNum += "8";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_EIGHTActionPerformed
-
+    }
+    
     private void NUMBER_NINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_NINEActionPerformed
+        handle9();
+    }//GEN-LAST:event_NUMBER_NINEActionPerformed
+    
+    private void handle9(){
         currentNum += "9";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_NINEActionPerformed
-
+    }
+    
     private void NUMBER_ZEROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_ZEROActionPerformed
+        handle0();
+    }//GEN-LAST:event_NUMBER_ZEROActionPerformed
+
+    private void handle0(){
         currentNum += "0";
         LABEL_TEXT.setText(currentNum);
         tempAns = null;
-    }//GEN-LAST:event_NUMBER_ZEROActionPerformed
-
+        this.setFocusable(true);
+    }
+    
     private void NUMBER_DECIMALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NUMBER_DECIMALActionPerformed
+        handleDecimal();
+    }//GEN-LAST:event_NUMBER_DECIMALActionPerformed
+    
+    private void handleDecimal(){
         currentNum += ".";
         LABEL_TEXT.setText(currentNum);
-    }//GEN-LAST:event_NUMBER_DECIMALActionPerformed
-
+        tempAns = null;
+    }
+    
     private void OPERATION_ADDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_ADDActionPerformed
-        if(currentNum.length() != 0){
-            numWithErrors.add(new NumWithError(currentNum));
-        }else if(tempAns != null){
-            numWithErrors.add(tempAns);
-        }
-            LABEL_TEXT.setText("0");
-            
-        if(numWithErrors.size() >= 2){
-            NumWithError result;
-            NumWithError[] params = numWithErrors.toArray(new NumWithError[0]);
-            try{
-                result = NumWithError.calculate(op, params);
-                LABEL_TEXT.setText(result.toString());
-                numWithErrors.set(0,result);                
-                numWithErrors.remove(1);                
-                ans =result;
-                tempAns = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-            op = Operations.ADD;
-            currentNum = "";
+        handleADD();
     }//GEN-LAST:event_OPERATION_ADDActionPerformed
-
+    
+    private void handleADD(){
+        handleCalcTwoParam();    
+        op = Operations.ADD;
+        currentNum = "";
+    }
+        
     private void OPERATION_SUBTRACTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_SUBTRACTActionPerformed
-        if(currentNum.length() != 0){
-            numWithErrors.add(new NumWithError(currentNum));
-        }else if(tempAns != null){
-            numWithErrors.add(tempAns);
-        }
-            LABEL_TEXT.setText("0");
-            
-        if(numWithErrors.size() >= 2){
-            NumWithError result;
-            NumWithError[] params = numWithErrors.toArray(new NumWithError[0]);
-            try{
-                result = NumWithError.calculate(op, params);
-                LABEL_TEXT.setText(result.toString());
-                numWithErrors.set(0,result);                
-                numWithErrors.remove(1);                
-                ans =result;
-                tempAns = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-            op = Operations.SUBTRACT;
-            currentNum = "";
+       handleSUBTRACTION(); 
     }//GEN-LAST:event_OPERATION_SUBTRACTActionPerformed
-
+    
+    private void handleSUBTRACTION(){
+        handleCalcTwoParam();
+        op = Operations.SUBTRACT;
+        currentNum = "";
+    }
+    
     private void OPERATION_MULTIPLYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_MULTIPLYActionPerformed
-        if(currentNum.length() != 0){
-            numWithErrors.add(new NumWithError(currentNum));
-        }else if(tempAns != null){
-            numWithErrors.add(tempAns);
-        }
-            LABEL_TEXT.setText("0");
-            
-        if(numWithErrors.size() >= 2){
-            NumWithError result;
-            NumWithError[] params = numWithErrors.toArray(new NumWithError[0]);
-            try{
-                result = NumWithError.calculate(op, params);
-                LABEL_TEXT.setText(result.toString());
-                numWithErrors.set(0,result);                
-                numWithErrors.remove(1);                
-                ans =result;
-                tempAns = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-            op = Operations.MULTIPLY;
-            currentNum = "";
+        handleMULTIPLICATION();
     }//GEN-LAST:event_OPERATION_MULTIPLYActionPerformed
-
+    
+    private void handleMULTIPLICATION(){
+        handleCalcTwoParam();
+        op = Operations.MULTIPLY;
+        currentNum = "";
+    }
+    
     private void OPERATION_DIVIDEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_DIVIDEActionPerformed
-        if(currentNum.length() != 0){
-            numWithErrors.add(new NumWithError(currentNum));
-        }else if(tempAns != null){
-            numWithErrors.add(tempAns);
-        }
-            LABEL_TEXT.setText("0");
-            
-        if(numWithErrors.size() >= 2){
-            NumWithError result;
-            NumWithError[] params = numWithErrors.toArray(new NumWithError[0]);
-            try{
-                result = NumWithError.calculate(op, params);
-                LABEL_TEXT.setText(result.toString());
-                numWithErrors.set(0,result);                
-                numWithErrors.remove(1);                
-                ans =result;
-                tempAns = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-            op = Operations.DIVIDE;
-            currentNum = "";
+        handleDIVIDE();
     }//GEN-LAST:event_OPERATION_DIVIDEActionPerformed
 
+    private void handleDIVIDE(){
+        handleCalcTwoParam();
+        op = Operations.DIVIDE;
+        currentNum = "";
+    }
+    
+    private void handleCalcTwoParam(){
+        if(currentNum.length() != 0){
+            numWithErrors.add(new NumWithError(currentNum));
+        }else if(tempAns != null){
+            numWithErrors.add(tempAns);
+        }
+            LABEL_TEXT.setText("0");
+            
+        if(numWithErrors.size() >= 2){
+            NumWithError result;
+            NumWithError[] params = numWithErrors.toArray(new NumWithError[0]);
+            try{
+                result = NumWithError.calculate(op, params);
+                LABEL_TEXT.setText(result.toString());
+                numWithErrors.set(0,result);                
+                numWithErrors.remove(1);                
+                ans =result;
+                tempAns = result;
+            }catch(IllegalArgumentException e){
+                LABEL_TEXT.setText("ERROR:ARGUMENT");
+            }catch(NullPointerException e){
+                LABEL_TEXT.setText("ERROR:NULL");                
+            }catch(Exception e){
+                LABEL_TEXT.setText("ERROR");                
+            }
+        }
+        currentNum = "";
+    }
+    
     private void OPERATION_COSINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_COSINEActionPerformed
+        handleCOSINE();
+    }//GEN-LAST:event_OPERATION_COSINEActionPerformed
+    
+    private void handleCOSINE(){
+        handleCalcOneParam(Operations.COSINE);
+    }
+    
+    private void OPERATION_SINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_SINEActionPerformed
+        handleSINE();
+    }//GEN-LAST:event_OPERATION_SINEActionPerformed
+
+    private void handleSINE(){
+        handleCalcOneParam(Operations.SINE);
+    }
+    
+    private void OPERATION_TANGENTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_TANGENTActionPerformed
+        handleTANGENT();
+    }//GEN-LAST:event_OPERATION_TANGENTActionPerformed
+    
+    private void handleTANGENT(){
+        handleCalcOneParam(Operations.TANGENT);
+    }
+    
+    private void OPERATION_LOG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_LOG10ActionPerformed
+        handleLOG10();
+    }//GEN-LAST:event_OPERATION_LOG10ActionPerformed
+    
+    private void handleLOG10(){
+        handleCalcOneParam(Operations.LOG10);
+    }
+    
+    private void handleCalcOneParam(Method m){
         if(currentNum.length() != 0){
             try{
-                NumWithError result = NumWithError.calculate(Operations.COSINE, new NumWithError(currentNum));
+                NumWithError result = NumWithError.calculate(m, new NumWithError(currentNum));
                 LABEL_TEXT.setText(result.toString());
                 tempAns = result;
                 ans = result;
@@ -566,7 +603,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
             }
         }else if(tempAns != null){
             try{
-                NumWithError result = NumWithError.calculate(Operations.COSINE, tempAns);
+                NumWithError result = NumWithError.calculate(m, tempAns);
                 LABEL_TEXT.setText(result.toString());
                 tempAns = result;
                 ans = result;                
@@ -578,112 +615,18 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
                 LABEL_TEXT.setText("ERROR");                
             }
         }
-    }//GEN-LAST:event_OPERATION_COSINEActionPerformed
-
-    private void OPERATION_SINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_SINEActionPerformed
-        if(currentNum.length() != 0){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.SINE, new NumWithError(currentNum));
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }else if(tempAns != null){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.SINE, tempAns);
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-    }//GEN-LAST:event_OPERATION_SINEActionPerformed
-
-    private void OPERATION_TANGENTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_TANGENTActionPerformed
-        if(currentNum.length() != 0){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.TANGENT, new NumWithError(currentNum));
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }else if(tempAns != null){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.TANGENT, tempAns);
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-    }//GEN-LAST:event_OPERATION_TANGENTActionPerformed
-
-    private void OPERATION_LOG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_LOG10ActionPerformed
-        
-        if(currentNum.length() != 0){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.LOG10, new NumWithError(currentNum));
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }else if(tempAns != null){
-            try{
-                NumWithError result = NumWithError.calculate(Operations.LOG10, tempAns);
-                LABEL_TEXT.setText(result.toString());
-                tempAns = result;
-                ans = result;
-            }catch(IllegalArgumentException e){
-                LABEL_TEXT.setText("ERROR:ARGUMENT");
-            }catch(NullPointerException e){
-                LABEL_TEXT.setText("ERROR:NULL");                
-            }catch(Exception e){
-                LABEL_TEXT.setText("ERROR");                
-            }
-        }
-    }//GEN-LAST:event_OPERATION_LOG10ActionPerformed
-
+    }
+    
     private void OPERATION_POWERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_POWERActionPerformed
-        if(currentNum.length() != 0){
-            LABEL_TEXT.setText("0");
-            numWithErrors.add(new NumWithError(currentNum));
-            currentNum = "";
-            op = Operations.POWER;
-        }else{
-            LABEL_TEXT.setText("0");
-            numWithErrors.add(ans);
-            op = Operations.POWER;
-        }
+        handlePOWER();
     }//GEN-LAST:event_OPERATION_POWERActionPerformed
-
+    
+    private void handlePOWER(){
+        handleCalcTwoParam();
+        op = Operations.POWER;
+        currentNum = "";
+    }
+    
     private void FUNCTION_ANSWERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_ANSWERActionPerformed
         if(ans == null){
             LABEL_TEXT.setText("ERROR:NULL");
@@ -703,6 +646,10 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_FUNCTION_CLEARActionPerformed
 
     private void FUNCTION_EQUALSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_EQUALSActionPerformed
+        handleEQUALS();
+    }//GEN-LAST:event_FUNCTION_EQUALSActionPerformed
+    
+    private void handleEQUALS(){
         
         if(currentNum.length() != 0 && op != null){
             NumWithError result;
@@ -729,21 +676,88 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
             tempAns = new NumWithError(currentNum);
         }
         
-    }//GEN-LAST:event_FUNCTION_EQUALSActionPerformed
-
+    }
+    
     private void FUNCTION_PLUSMINUSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_PLUSMINUSActionPerformed
         currentNum += "±";
         LABEL_TEXT.setText(currentNum);
     }//GEN-LAST:event_FUNCTION_PLUSMINUSActionPerformed
 
     private void FUNCTION_BACKSPACEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_BACKSPACEActionPerformed
+        handleBACKSPACE();
+    }//GEN-LAST:event_FUNCTION_BACKSPACEActionPerformed
+
+    private void formKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyTyped
+        switch(evt.getKeyChar()){
+            case '0':
+                handle0();
+                break;
+            case '1':
+                handle1();
+                break;
+            case '2':
+                handle2();
+                break;
+            case '3':
+                handle3();
+                break;
+            case '4':
+                handle4();
+                break;
+            case '5':
+                handle5();
+                break;
+            case '6':
+                handle6();
+                break;
+            case '7':
+                handle7();
+                break;
+            case '8':
+                handle8();
+                break;
+            case '9':
+                handle9();
+                break;
+            case '.':
+                handleDecimal();
+                break;
+            case '-':
+                handleSUBTRACTION();
+                break;
+            case '+':
+                handleADD();
+                break;
+            case '/':
+                handleDIVIDE();
+                break;
+            case '*':
+                handleMULTIPLICATION();
+                break;
+            case '=':
+                handleEQUALS();
+        }
+    }//GEN-LAST:event_formKeyTyped
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        switch(evt.getExtendedKeyCode()){
+            case 10:
+                handleEQUALS();
+                break;
+            case 8:
+                handleBACKSPACE();
+                break;
+        }
+    }//GEN-LAST:event_formKeyPressed
+    
+    private void handleBACKSPACE(){
         if(currentNum.length() >= 1){
             String temp = currentNum.substring(0,currentNum.length()-1);
             currentNum = temp;
             LABEL_TEXT.setText(currentNum);        
         }
-    }//GEN-LAST:event_FUNCTION_BACKSPACEActionPerformed
-
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -771,7 +785,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -808,4 +822,5 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JButton OPERATION_SUBTRACT;
     private javax.swing.JButton OPERATION_TANGENT;
     // End of variables declaration//GEN-END:variables
+
 }
