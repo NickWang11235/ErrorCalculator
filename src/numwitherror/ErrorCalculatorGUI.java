@@ -65,6 +65,31 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         FUNCTION_BACKSPACE = new javax.swing.JButton();
         LABEL_TEXT = new javax.swing.JLabel();
         RADDEG = new javax.swing.JButton();
+        FUNCTION_STO1 = new javax.swing.JButton();
+        FUNCTION_STO2 = new javax.swing.JButton();
+        FUNCTION_STO3 = new javax.swing.JButton();
+        FUNCTION_STO4 = new javax.swing.JButton();
+        FUNCTION_STO5 = new javax.swing.JButton();
+        FUNCTION_STO6 = new javax.swing.JButton();
+        FUNCTION_STO7 = new javax.swing.JButton();
+        FUNCTION_STO8 = new javax.swing.JButton();
+        FUNCTION_CALLSTO1 = new javax.swing.JButton();
+        FUNCTION_CALLSTO2 = new javax.swing.JButton();
+        FUNCTION_CALLSTO3 = new javax.swing.JButton();
+        FUNCTION_CALLSTO4 = new javax.swing.JButton();
+        FUNCTION_CALLSTO5 = new javax.swing.JButton();
+        FUNCTION_CALLSTO6 = new javax.swing.JButton();
+        FUNCTION_CALLSTO7 = new javax.swing.JButton();
+        FUNCTION_CALLSTO8 = new javax.swing.JButton();
+        LABEL_STOREDVALUES = new javax.swing.JLabel();
+        LABEL_STO1 = new javax.swing.JLabel();
+        LABEL_STO2 = new javax.swing.JLabel();
+        LABEL_STO3 = new javax.swing.JLabel();
+        LABEL_STO4 = new javax.swing.JLabel();
+        LABEL_STO5 = new javax.swing.JLabel();
+        LABEL_STO6 = new javax.swing.JLabel();
+        LABEL_STO7 = new javax.swing.JLabel();
+        LABEL_STO8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -263,6 +288,138 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
             }
         });
 
+        FUNCTION_STO1.setText("Sto 1");
+        FUNCTION_STO1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO1ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO2.setText("Sto 2");
+        FUNCTION_STO2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO2ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO3.setText("Sto 3");
+        FUNCTION_STO3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO3ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO4.setText("Sto 4");
+        FUNCTION_STO4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO4ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO5.setText("Sto 5");
+        FUNCTION_STO5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO5ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO6.setText("Sto 6");
+        FUNCTION_STO6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO6ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO7.setText("Sto 7");
+        FUNCTION_STO7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO7ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_STO8.setText("Sto 8");
+        FUNCTION_STO8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_STO8ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO1.setText("0");
+        FUNCTION_CALLSTO1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO1ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO2.setText("0");
+        FUNCTION_CALLSTO2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO2ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO3.setText("0");
+        FUNCTION_CALLSTO3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO3ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO4.setText("0");
+        FUNCTION_CALLSTO4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO4ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO5.setText("0");
+        FUNCTION_CALLSTO5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO5ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO6.setText("0");
+        FUNCTION_CALLSTO6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO6ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO7.setText("0");
+        FUNCTION_CALLSTO7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO7ActionPerformed(evt);
+            }
+        });
+
+        FUNCTION_CALLSTO8.setText("0");
+        FUNCTION_CALLSTO8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FUNCTION_CALLSTO8ActionPerformed(evt);
+            }
+        });
+
+        LABEL_STOREDVALUES.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        LABEL_STOREDVALUES.setText("Stored Values");
+
+        LABEL_STO1.setBackground(new java.awt.Color(0, 0, 255));
+        LABEL_STO1.setText("Sto1");
+
+        LABEL_STO2.setText("Sto 2");
+
+        LABEL_STO3.setText("Sto 3");
+
+        LABEL_STO4.setText("Sto 4");
+
+        LABEL_STO5.setText("Sto 5");
+
+        LABEL_STO6.setText("Sto 6");
+
+        LABEL_STO7.setText("Sto 7");
+
+        LABEL_STO8.setText("Sto 8");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -270,32 +427,22 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(LABEL_TEXT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(NUMBER_ZERO, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(OPERATION_LOG10, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
+                                    .addComponent(RADDEG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NUMBER_DECIMAL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(FUNCTION_EQUALS, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_DIVIDE, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(NUMBER_SEVEN, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NUMBER_EIGHT, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NUMBER_NINE, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_MULTIPLY, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(NUMBER_FOUR, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NUMBER_FIVE, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NUMBER_SIX)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OPERATION_SUBTRACT, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(OPERATION_SINE, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OPERATION_COSINE, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(OPERATION_TANGENT, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(OPERATION_POWER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(FUNCTION_PLUSMINUS)
@@ -314,24 +461,77 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(OPERATION_ADD, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(OPERATION_LOG10, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
-                                    .addComponent(RADDEG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(NUMBER_FOUR, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(OPERATION_SINE, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(OPERATION_COSINE, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(OPERATION_TANGENT, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(OPERATION_POWER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 23, Short.MAX_VALUE))
-                    .addComponent(LABEL_TEXT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                                .addComponent(NUMBER_FIVE, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(NUMBER_SIX)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(OPERATION_SUBTRACT, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(NUMBER_SEVEN, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(NUMBER_EIGHT, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(NUMBER_NINE, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(OPERATION_MULTIPLY, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(FUNCTION_STO1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(NUMBER_ZERO, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(NUMBER_DECIMAL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_EQUALS, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(OPERATION_DIVIDE, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(FUNCTION_STO5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(FUNCTION_STO8)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LABEL_STOREDVALUES, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LABEL_STO1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LABEL_STO2)
+                            .addComponent(LABEL_STO3)
+                            .addComponent(LABEL_STO4)
+                            .addComponent(LABEL_STO5)
+                            .addComponent(LABEL_STO6)
+                            .addComponent(LABEL_STO7)
+                            .addComponent(LABEL_STO8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(FUNCTION_CALLSTO1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(FUNCTION_CALLSTO2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FUNCTION_CALLSTO3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FUNCTION_CALLSTO4, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FUNCTION_CALLSTO5, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FUNCTION_CALLSTO6, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FUNCTION_CALLSTO7, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(FUNCTION_CALLSTO8))
+                        .addContainerGap(18, Short.MAX_VALUE))))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {FUNCTION_ANSWER, FUNCTION_BACKSPACE, FUNCTION_CLEAR, FUNCTION_EQUALS, FUNCTION_PLUSMINUS, NUMBER_DECIMAL, NUMBER_EIGHT, NUMBER_FIVE, NUMBER_FOUR, NUMBER_NINE, NUMBER_ONE, NUMBER_SEVEN, NUMBER_SIX, NUMBER_THREE, NUMBER_TWO, NUMBER_ZERO, OPERATION_ADD, OPERATION_COSINE, OPERATION_DIVIDE, OPERATION_LOG10, OPERATION_MULTIPLY, OPERATION_POWER, OPERATION_SINE, OPERATION_SUBTRACT, OPERATION_TANGENT, RADDEG});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {FUNCTION_ANSWER, FUNCTION_BACKSPACE, FUNCTION_CLEAR, FUNCTION_EQUALS, FUNCTION_PLUSMINUS, FUNCTION_STO1, FUNCTION_STO2, FUNCTION_STO3, FUNCTION_STO4, FUNCTION_STO5, FUNCTION_STO6, FUNCTION_STO7, FUNCTION_STO8, NUMBER_DECIMAL, NUMBER_EIGHT, NUMBER_FIVE, NUMBER_FOUR, NUMBER_NINE, NUMBER_ONE, NUMBER_SEVEN, NUMBER_SIX, NUMBER_THREE, NUMBER_TWO, NUMBER_ZERO, OPERATION_ADD, OPERATION_COSINE, OPERATION_DIVIDE, OPERATION_LOG10, OPERATION_MULTIPLY, OPERATION_POWER, OPERATION_SINE, OPERATION_SUBTRACT, OPERATION_TANGENT, RADDEG});
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {FUNCTION_CALLSTO1, FUNCTION_CALLSTO2, FUNCTION_CALLSTO3, FUNCTION_CALLSTO4, FUNCTION_CALLSTO5, FUNCTION_CALLSTO6, FUNCTION_CALLSTO7, FUNCTION_CALLSTO8});
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {LABEL_STO1, LABEL_STO2, LABEL_STO3, LABEL_STO4, LABEL_STO5, LABEL_STO6, LABEL_STO7, LABEL_STO8});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -341,43 +541,90 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(OPERATION_LOG10)
-                    .addComponent(OPERATION_POWER))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OPERATION_COSINE)
-                    .addComponent(OPERATION_TANGENT)
-                    .addComponent(OPERATION_SINE)
-                    .addComponent(RADDEG))
-                .addGap(16, 16, 16)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FUNCTION_ANSWER)
-                    .addComponent(FUNCTION_CLEAR)
-                    .addComponent(FUNCTION_BACKSPACE)
-                    .addComponent(FUNCTION_PLUSMINUS))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NUMBER_ONE)
-                    .addComponent(NUMBER_TWO)
-                    .addComponent(NUMBER_THREE)
-                    .addComponent(OPERATION_ADD))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NUMBER_FOUR)
-                    .addComponent(NUMBER_FIVE)
-                    .addComponent(NUMBER_SIX)
-                    .addComponent(OPERATION_SUBTRACT))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NUMBER_SEVEN)
-                    .addComponent(NUMBER_EIGHT)
-                    .addComponent(NUMBER_NINE)
-                    .addComponent(OPERATION_MULTIPLY))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OPERATION_DIVIDE)
-                    .addComponent(NUMBER_ZERO)
-                    .addComponent(NUMBER_DECIMAL)
-                    .addComponent(FUNCTION_EQUALS))
+                    .addComponent(OPERATION_POWER)
+                    .addComponent(LABEL_STOREDVALUES, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(OPERATION_COSINE)
+                            .addComponent(OPERATION_TANGENT)
+                            .addComponent(OPERATION_SINE)
+                            .addComponent(RADDEG))
+                        .addGap(16, 16, 16)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_ANSWER)
+                            .addComponent(FUNCTION_CLEAR)
+                            .addComponent(FUNCTION_BACKSPACE)
+                            .addComponent(FUNCTION_PLUSMINUS))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NUMBER_ONE)
+                            .addComponent(NUMBER_TWO)
+                            .addComponent(NUMBER_THREE)
+                            .addComponent(OPERATION_ADD))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NUMBER_FOUR)
+                            .addComponent(NUMBER_FIVE)
+                            .addComponent(NUMBER_SIX)
+                            .addComponent(OPERATION_SUBTRACT))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NUMBER_SEVEN)
+                            .addComponent(NUMBER_EIGHT)
+                            .addComponent(NUMBER_NINE)
+                            .addComponent(OPERATION_MULTIPLY))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(OPERATION_DIVIDE)
+                            .addComponent(NUMBER_ZERO)
+                            .addComponent(NUMBER_DECIMAL)
+                            .addComponent(FUNCTION_EQUALS))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_STO1)
+                            .addComponent(FUNCTION_STO2)
+                            .addComponent(FUNCTION_STO3)
+                            .addComponent(FUNCTION_STO4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_STO5)
+                            .addComponent(FUNCTION_STO6)
+                            .addComponent(FUNCTION_STO7)
+                            .addComponent(FUNCTION_STO8)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(FUNCTION_CALLSTO1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LABEL_STO1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO2)
+                            .addComponent(LABEL_STO2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO3)
+                            .addComponent(LABEL_STO3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO4)
+                            .addComponent(LABEL_STO4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO5)
+                            .addComponent(LABEL_STO5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO6)
+                            .addComponent(LABEL_STO6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO7)
+                            .addComponent(LABEL_STO7))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FUNCTION_CALLSTO8)
+                            .addComponent(LABEL_STO8))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -386,6 +633,10 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {FUNCTION_BACKSPACE, OPERATION_COSINE});
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {OPERATION_LOG10, RADDEG});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {FUNCTION_STO1, FUNCTION_STO2, FUNCTION_STO3, FUNCTION_STO4, FUNCTION_STO5, FUNCTION_STO6, FUNCTION_STO7, FUNCTION_STO8, NUMBER_ZERO});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {FUNCTION_CALLSTO1, FUNCTION_CALLSTO2, FUNCTION_CALLSTO3, FUNCTION_CALLSTO4, FUNCTION_CALLSTO5, FUNCTION_CALLSTO6, FUNCTION_CALLSTO7, FUNCTION_CALLSTO8, LABEL_STO1, LABEL_STO2, LABEL_STO3, LABEL_STO4, LABEL_STO5, LABEL_STO6, LABEL_STO7, LABEL_STO8});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -542,9 +793,11 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     }
     
     private void handleCalcTwoParam(){
+            System.out.println(currentNum);
         if(currentNum.length() != 0){
             numWithErrors.add(new NumWithError(currentNum));
         }else if(tempAns != null){
+            System.out.println(tempAns);
             numWithErrors.add(tempAns);
         }
             LABEL_TEXT.setText("0");
@@ -632,6 +885,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 LABEL_TEXT.setText(result.toString());
                 tempAns = result;
                 ans = result;
+                currentNum = "";
             }catch(IllegalArgumentException e){
                 LABEL_TEXT.setText("ERROR:ARGUMENT");
             }catch(NullPointerException e){
@@ -645,6 +899,7 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
                 LABEL_TEXT.setText(result.toString());
                 tempAns = result;
                 ans = result;                
+                currentNum = "";
             }catch(IllegalArgumentException e){
                 LABEL_TEXT.setText("ERROR:ARGUMENT");
             }catch(NullPointerException e){
@@ -796,6 +1051,82 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
             RADDEG.setText("Deg");
         
     }//GEN-LAST:event_RADDEGActionPerformed
+
+    private void FUNCTION_STO1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO1ActionPerformed
+        storeTo(FUNCTION_CALLSTO1);
+    }//GEN-LAST:event_FUNCTION_STO1ActionPerformed
+
+    private void FUNCTION_CALLSTO1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO1ActionPerformed
+        call(FUNCTION_CALLSTO1);
+    }//GEN-LAST:event_FUNCTION_CALLSTO1ActionPerformed
+
+    private void FUNCTION_CALLSTO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO2ActionPerformed
+        call(FUNCTION_CALLSTO2);
+    }//GEN-LAST:event_FUNCTION_CALLSTO2ActionPerformed
+
+    private void FUNCTION_CALLSTO3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO3ActionPerformed
+        call(FUNCTION_CALLSTO3);
+    }//GEN-LAST:event_FUNCTION_CALLSTO3ActionPerformed
+
+    private void FUNCTION_CALLSTO4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO4ActionPerformed
+        call(FUNCTION_CALLSTO4);
+    }//GEN-LAST:event_FUNCTION_CALLSTO4ActionPerformed
+
+    private void FUNCTION_CALLSTO5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO5ActionPerformed
+        call(FUNCTION_CALLSTO5);
+    }//GEN-LAST:event_FUNCTION_CALLSTO5ActionPerformed
+
+    private void FUNCTION_CALLSTO6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO6ActionPerformed
+        call(FUNCTION_CALLSTO6);
+    }//GEN-LAST:event_FUNCTION_CALLSTO6ActionPerformed
+
+    private void FUNCTION_CALLSTO7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO7ActionPerformed
+        call(FUNCTION_CALLSTO7);
+    }//GEN-LAST:event_FUNCTION_CALLSTO7ActionPerformed
+
+    private void FUNCTION_CALLSTO8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_CALLSTO8ActionPerformed
+        call(FUNCTION_CALLSTO8);
+    }//GEN-LAST:event_FUNCTION_CALLSTO8ActionPerformed
+
+    private void FUNCTION_STO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO2ActionPerformed
+        storeTo(FUNCTION_CALLSTO2);
+    }//GEN-LAST:event_FUNCTION_STO2ActionPerformed
+
+    private void FUNCTION_STO3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO3ActionPerformed
+        storeTo(FUNCTION_CALLSTO3);
+    }//GEN-LAST:event_FUNCTION_STO3ActionPerformed
+
+    private void FUNCTION_STO4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO4ActionPerformed
+        storeTo(FUNCTION_CALLSTO4);
+    }//GEN-LAST:event_FUNCTION_STO4ActionPerformed
+
+    private void FUNCTION_STO5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO5ActionPerformed
+        storeTo(FUNCTION_CALLSTO5);
+    }//GEN-LAST:event_FUNCTION_STO5ActionPerformed
+
+    private void FUNCTION_STO6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO6ActionPerformed
+        storeTo(FUNCTION_CALLSTO6);
+    }//GEN-LAST:event_FUNCTION_STO6ActionPerformed
+
+    private void FUNCTION_STO7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO7ActionPerformed
+        storeTo(FUNCTION_CALLSTO7);
+    }//GEN-LAST:event_FUNCTION_STO7ActionPerformed
+
+    private void FUNCTION_STO8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FUNCTION_STO8ActionPerformed
+        storeTo(FUNCTION_CALLSTO8);
+    }//GEN-LAST:event_FUNCTION_STO8ActionPerformed
+    
+    private void storeTo(javax.swing.JButton b){
+        b.setText(ans.toString());
+    }
+    
+    private void call(javax.swing.JButton b){
+        NumWithError temp = new NumWithError(b.getText());
+        tempAns = temp;
+        ans = temp;
+        currentNum = b.getText();
+        LABEL_TEXT.setText(currentNum);
+    }
     
     private static String degToRad(String str){
         
@@ -861,9 +1192,34 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton FUNCTION_ANSWER;
     private javax.swing.JButton FUNCTION_BACKSPACE;
+    private javax.swing.JButton FUNCTION_CALLSTO1;
+    private javax.swing.JButton FUNCTION_CALLSTO2;
+    private javax.swing.JButton FUNCTION_CALLSTO3;
+    private javax.swing.JButton FUNCTION_CALLSTO4;
+    private javax.swing.JButton FUNCTION_CALLSTO5;
+    private javax.swing.JButton FUNCTION_CALLSTO6;
+    private javax.swing.JButton FUNCTION_CALLSTO7;
+    private javax.swing.JButton FUNCTION_CALLSTO8;
     private javax.swing.JButton FUNCTION_CLEAR;
     private javax.swing.JButton FUNCTION_EQUALS;
     private javax.swing.JButton FUNCTION_PLUSMINUS;
+    private javax.swing.JButton FUNCTION_STO1;
+    private javax.swing.JButton FUNCTION_STO2;
+    private javax.swing.JButton FUNCTION_STO3;
+    private javax.swing.JButton FUNCTION_STO4;
+    private javax.swing.JButton FUNCTION_STO5;
+    private javax.swing.JButton FUNCTION_STO6;
+    private javax.swing.JButton FUNCTION_STO7;
+    private javax.swing.JButton FUNCTION_STO8;
+    private javax.swing.JLabel LABEL_STO1;
+    private javax.swing.JLabel LABEL_STO2;
+    private javax.swing.JLabel LABEL_STO3;
+    private javax.swing.JLabel LABEL_STO4;
+    private javax.swing.JLabel LABEL_STO5;
+    private javax.swing.JLabel LABEL_STO6;
+    private javax.swing.JLabel LABEL_STO7;
+    private javax.swing.JLabel LABEL_STO8;
+    private javax.swing.JLabel LABEL_STOREDVALUES;
     private javax.swing.JLabel LABEL_TEXT;
     private javax.swing.JButton NUMBER_DECIMAL;
     private javax.swing.JButton NUMBER_EIGHT;

@@ -62,17 +62,17 @@ public class NumWithError {
         
     }
     
-    @Override
-    public String toString(){
-        char plusminussign = '\u00B1';
-        return Math.round(this.num*100000000.0)/100000000.0+ " " + plusminussign + " " + Math.round(this.error*100000000.0)/100000000.0;
-    }
-//    
 //    @Override
 //    public String toString(){
 //        char plusminussign = '\u00B1';
-//        return this.num+ " " + plusminussign + " " + this.error;
+//        return Math.round(this.num*100000000.0)/100000000.0+ " " + plusminussign + " " + Math.round(this.error*100000000.0)/100000000.0;
 //    }
+//    
+    @Override
+    public String toString(){
+        char plusminussign = '\u00B1';
+        return this.num+ " " + plusminussign + " " + this.error;
+    }
     
     /**
      * @param args the command line arguments
