@@ -578,11 +578,11 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         if(!radians)
             currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.COSINE);
-        if(!radians){
-            ans = ErrorCalculatorGUI.radToDeg(ans);
-            tempAns = ans;
-            LABEL_TEXT.setText(ans.toString());
-        }
+//        if(!radians){
+//            ans = ErrorCalculatorGUI.radToDeg(ans);
+//            tempAns = ans;
+//            LABEL_TEXT.setText(ans.toString());
+//        }
     }
     
     private void OPERATION_SINEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_SINEActionPerformed
@@ -593,11 +593,11 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         if(!radians)
             currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.SINE);
-        if(!radians){
-            ans = ErrorCalculatorGUI.radToDeg(ans);
-            tempAns = ans;
-            LABEL_TEXT.setText(ans.toString());
-        }
+//        if(!radians){
+//            ans = ErrorCalculatorGUI.radToDeg(ans);
+//            tempAns = ans;
+//            LABEL_TEXT.setText(ans.toString());
+//        }
     }
     
     private void OPERATION_TANGENTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_TANGENTActionPerformed
@@ -610,11 +610,11 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
         if(!radians)
             currentNum = ErrorCalculatorGUI.degToRad(currentNum);
         handleCalcOneParam(Operations.TANGENT);
-        if(!radians){
-            ans = ErrorCalculatorGUI.radToDeg(ans);
-            tempAns = ans;
-            LABEL_TEXT.setText(ans.toString());
-        }
+//        if(!radians){
+//            ans = ErrorCalculatorGUI.radToDeg(ans);
+//            tempAns = ans;
+//            LABEL_TEXT.setText(ans.toString());
+//        }
     }
        
     private void OPERATION_LOG10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OPERATION_LOG10ActionPerformed
@@ -798,11 +798,20 @@ public class ErrorCalculatorGUI extends javax.swing.JFrame{
     }//GEN-LAST:event_RADDEGActionPerformed
     
     private static String degToRad(String str){
-        return String.valueOf(Math.toDegrees(Double.valueOf(str)));
+        
+        String[] temps = str.split("±");
+        String result;
+        result = String.valueOf(Math.toRadians(Double.valueOf(temps[0])));
+        result += "±";
+        if(temps.length >= 2){
+            result += String.valueOf(Math.toRadians(Double.valueOf(temps[1])));
+        }else
+            result += "0";
+        return result;
     }
     
     private static NumWithError radToDeg(NumWithError num){
-        return new NumWithError(Math.toRadians(num.getNum()), Math.toRadians(num.getError()));
+        return new NumWithError(Math.toDegrees(num.getNum()), Math.toDegrees(num.getError()));
     }
     
     private void handleBACKSPACE(){
